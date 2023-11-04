@@ -3,8 +3,8 @@ This is my repo to commit code daily to learn how to program in Go.
 
 ## Resources
 - [go101](https://go101.org/)
-- [Microsoft](https://learn.microsoft.com/en-us/training/paths/)go-first-steps/
-- [Digital Ocean](https://www.digitalocean.com/community/)tutorial-series/how-to-code-in-go
+- [Microsoft](https://learn.microsoft.com/en-us/training/paths/go-first-steps/)
+- [Digital Ocean](https://www.digitalocean.com/community/tutorial-series/how-to-code-in-go)
 - [Official Go](https://go.dev/doc/tutorial/)
 
 
