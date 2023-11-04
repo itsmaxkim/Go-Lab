@@ -26,18 +26,14 @@ Integer numbers
 keyword to define an integer type is int. Go also provides the int8, int16, int32, and int64 types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. You'll need to cast explicitly when a cast is required.
 
 A rune is simply an alias for int32 data type. It's used to represent a Unicode character (or a Unicode code point).
-```
-rune := 'G'
-fmt.Println(rune)
 
-```
+    rune := 'G'
+    fmt.Println(rune)
 
 Booleans
 A boolean type has only two possible values: true and false.
-```
-var do_you_cap bool = true
-
-```
+    
+    var do_you_cap bool = true
 
 Strings
 To initialize a string variable, you need to define its value within double quotation marks ("). Single quotation marks (') are used for single characters.
