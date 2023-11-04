@@ -55,3 +55,20 @@ Here's a list of a few default values for the types we've explored so far:
     +0.000000e+000 for float32 and float64 types
     false for bool types
     An empty value for string types
+
+Functions
+You can only have one main() function in your program. If you're creating a Go package, you don't need to write a main() function.
+
+Syntax for creating a function:
+
+    func name(parameters) (results) {
+        body-content
+    }
+
+Pointers
+A pointer is a variable that contains the memory address of another variable. When you send a pointer to a function, you're not passing a value, you're passing a memory address. So every change you make to that variable affects the caller.
+
+In Go, there are two operators for working with pointers:
+
+    The & operator takes the address of the object that follows it.
+    The * operator dereferences a pointer. It gives you access to the object at the address contained in the pointer.
