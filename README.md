@@ -97,8 +97,8 @@ You can also use switch statements to avoid chaining multiple if statements. Her
         var region string
         var continent string
         switch city {
-        case "Delhi", "Hyderabad", "Mumbai", "Chennai", "Kochi":
-            region, continent = "India", "Asia"
+        case "Vancouver", "Kamloops", "Kelowna":
+            region, continent = "British Columbia", "Canada"
         case "Lafayette", "Louisville", "Boulder":
             region, continent = "Colorado", "USA"
         case "Irvine", "Los Angeles", "San Diego":
@@ -109,8 +109,8 @@ You can also use switch statements to avoid chaining multiple if statements. Her
         return region, continent
     }
     func main() {
-        region, continent := location("Irvine")
-        fmt.Printf("John works in %s, %s\n", region, continent)
+        region, continent := location("Vancouver")
+        fmt.Printf("Max works in %s, %s\n", region, continent)
     }
 
 In some programming languages, you write a break keyword at the end of every case statement. But in Go, when the logic falls into one case, it exits the switch block unless you explicitly stop it. To make the logic fall through to the next immediate case, use the fallthrough keyword.
