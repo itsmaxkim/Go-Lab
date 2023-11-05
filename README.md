@@ -118,5 +118,10 @@ In some programming languages, you write a break keyword at the end of every cas
 if for loops you can use break keyword to make an logic exit. You can also use continue to skip the current iteration of a loop.
 
 ## Defer function
-defer statement postpones the running of a function (including any parameters) until the function that contains the defer statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process.
+Defer statement postpones the running of a function (including any parameters) until the function that contains the defer statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process.
 
+## Panic function
+Runtime errors make a Go program panic, such as attempting to access an array by using an out-of-bounds index or dereferencing a nil pointer. You can also force a program to panic.
+
+## Recover function
+Sometimes you might want to avoid a program crash and instead report the error internally. Or perhaps you want to clean up the mess before letting the program crash. For instance, you might want to close any connection to a resource to avoid more problems.
