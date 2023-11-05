@@ -73,6 +73,7 @@ In Go, there are two operators for working with pointers:
     The & operator takes the address of the object that follows it.
     The * operator dereferences a pointer. It gives you access to the object at the address contained in the pointer.
 
+# Day 3
 ## Control Flows
 Syntax for compound if statements:
 
@@ -114,5 +115,5 @@ You can also use switch statements to avoid chaining multiple if statements. Her
 
 In some programming languages, you write a break keyword at the end of every case statement. But in Go, when the logic falls into one case, it exits the switch block unless you explicitly stop it. To make the logic fall through to the next immediate case, use the fallthrough keyword.
 
-if for loops you can use break keyword to make an logic exit. You can also use continue to skipt the current iteration of a loop.
+if for loops you can use break keyword to make an logic exit. You can also use continue to skip the current iteration of a loop.
 
