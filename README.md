@@ -8,12 +8,12 @@ This is my repo to commit code daily to learn how to program in Go.
 - [Official Go](https://go.dev/doc/tutorial/)
 
 
-### Day 1
+# Day 1
 - created hello.go that prints out a simple message "Hello, World!".
 - Refactored hello.go module to use locally created example.com/greetings module.
 - Refactored hello.go and greetings.go for error handling when no name is given.
 
-### Day 2
+# Day 2
 - created var.go in /microsoft that declares and initializes variables and constants in Go.
 
 In Go, you have four categories of data types:
@@ -72,3 +72,47 @@ In Go, there are two operators for working with pointers:
 
     The & operator takes the address of the object that follows it.
     The * operator dereferences a pointer. It gives you access to the object at the address contained in the pointer.
+
+## Control Flows
+Syntax for compound if statements:
+
+    func main() {
+        if condition {
+            fmt.Println("do something cool")
+        } else another condition {
+            fmt.Println("do something lame")
+        } else {
+            fmt.Println("i write in all lowercase cause i never cap")
+        }
+    }
+
+You can also use switch statements to avoid chaining multiple if statements. Here is an example of multiple expressions:
+
+    package main
+
+    import "fmt"
+
+    func location(city string) (string, string) {
+        var region string
+        var continent string
+        switch city {
+        case "Delhi", "Hyderabad", "Mumbai", "Chennai", "Kochi":
+            region, continent = "India", "Asia"
+        case "Lafayette", "Louisville", "Boulder":
+            region, continent = "Colorado", "USA"
+        case "Irvine", "Los Angeles", "San Diego":
+            region, continent = "California", "USA"
+        default:
+            region, continent = "Unknown", "Unknown"
+        }
+        return region, continent
+    }
+    func main() {
+        region, continent := location("Irvine")
+        fmt.Printf("John works in %s, %s\n", region, continent)
+    }
+
+In some programming languages, you write a break keyword at the end of every case statement. But in Go, when the logic falls into one case, it exits the switch block unless you explicitly stop it. To make the logic fall through to the next immediate case, use the fallthrough keyword.
+
+if for loops you can use break keyword to make an logic exit. You can also use continue to skipt the current iteration of a loop.
+
