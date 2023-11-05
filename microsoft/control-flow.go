@@ -2,16 +2,22 @@ package main
 
 import "fmt"
 
+func location(city string) (string, string) {
+	var region string
+	var continent string
+	switch city {
+	case "Vancouver", "Kamloops", "Kelowna":
+		region, continent = "British Columbia", "Canada"
+	case "Toronto", "Vaughan", "Markham":
+		region, continent = "Ontario", "Canada"
+	case "Irvine", "Los Angeles", "San Diego":
+		region, continent = "California", "USA"
+	default:
+		region, continent = "Unknown", "Unknown"
+	}
+	return region, continent
+}
 func main() {
-	ttl := 255
-	if ttl == 0 {
-		fmt.Println(ttl, "value is 0 the packet is expired")
-	}
-
-	sum := 0
-	for i := 1; i <= 100; i++ {
-		sum += i
-	}
-	fmt.Println("sum of 1..100 is", sum)
-
+	region, continent := location("Vancouver")
+	fmt.Printf("Max works in %s, %s\n", region, continent)
 }

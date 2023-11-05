@@ -99,8 +99,8 @@ You can also use switch statements to avoid chaining multiple if statements. Her
         switch city {
         case "Vancouver", "Kamloops", "Kelowna":
             region, continent = "British Columbia", "Canada"
-        case "Lafayette", "Louisville", "Boulder":
-            region, continent = "Colorado", "USA"
+        case "Toronto", "Vaughan", "Markham":
+            region, continent = "Ontario", "Canada"
         case "Irvine", "Los Angeles", "San Diego":
             region, continent = "California", "USA"
         default:
@@ -116,4 +116,7 @@ You can also use switch statements to avoid chaining multiple if statements. Her
 In some programming languages, you write a break keyword at the end of every case statement. But in Go, when the logic falls into one case, it exits the switch block unless you explicitly stop it. To make the logic fall through to the next immediate case, use the fallthrough keyword.
 
 if for loops you can use break keyword to make an logic exit. You can also use continue to skip the current iteration of a loop.
+
+## Defer function
+defer statement postpones the running of a function (including any parameters) until the function that contains the defer statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process.
 
